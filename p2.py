@@ -154,4 +154,12 @@ def demo_re():
 
 #demo_re()
 
-print random.randint(0,123)
+#print random.randint(0,123)
+
+a=0
+def demo_local():
+    x=1
+    print a
+
+demo_local()
+print a

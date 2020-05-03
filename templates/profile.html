@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>this is a profile</h1>
+<div>
+    {% macro render_color(color) %}
+    <div>This is color {{ color }}</div>
+    {% endmacro %}
+
+    uid:{{uid}}<br/>
+    {% for color in colors: %}
+        {{ render_color(color) }}
+    {% endfor %}<br/>
+
+
+
+    {% filter upper %}
+    {% for k,v in userInfo.items(): %}
+    {{k}}:{{v}}<br/>
+    {% endfor %}
+    {% endfilter %}
+
+
+
+</div>
+</body>
+</html>
